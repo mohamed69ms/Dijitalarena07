@@ -7,7 +7,7 @@
   const $ = (s) => document.querySelector(s);
 
   let activeCategory = "all";
-  let cart = JSON.parse(localStorage.getItem("digitalArenaCart") || "[]");
+  let cart = JSON.parse(localStorage.getItem("djitalArenaCart") || "[]");
 
   const escapeHtml = (s) => String(s).replace(/[&<>"']/g, c => ({
     "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
@@ -81,7 +81,7 @@
   }
 
   function saveCart() {
-    localStorage.setItem("digitalArenaCart", JSON.stringify(cart));
+    localStorage.setItem("djitalArenaCart", JSON.stringify(cart));
   }
 
   function updateCart() {
@@ -135,7 +135,7 @@
   function orderWhatsApp() {
     if (!cart.length) return;
     const names = cart.map(id => products.find(p => p.id === id)?.name).filter(Boolean);
-    const text = "السلام عليكم Digital Arena، أريد طلب:%0A- " + names.join("%0A- ") +
+    const text = "السلام عليكم Djital arena 07 by Fadi، أريد طلب:%0A- " + names.join("%0A- ") +
       "%0A%0Aرقم التواصل: 0665565242";
     window.open("https://wa.me/213665565242?text=" + text, "_blank", "noopener");
   }
@@ -155,9 +155,9 @@
 
   $("#themeBtn").onclick = () => {
     document.body.classList.toggle("light");
-    localStorage.setItem("digitalArenaTheme", document.body.classList.contains("light") ? "light" : "dark");
+    localStorage.setItem("djitalArenaTheme", document.body.classList.contains("light") ? "light" : "dark");
   };
-  if (localStorage.getItem("digitalArenaTheme") === "light") document.body.classList.add("light");
+  if (localStorage.getItem("djitalArenaTheme") === "light") document.body.classList.add("light");
 
   $("#productCount").textContent = `${products.length}+`;
   renderCategories();
