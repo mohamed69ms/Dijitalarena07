@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070910">
+  <meta name="description" content="Djital arena 07 by Fadi — متجر الهواتف، الكونسول، إكسسوارات الجيمنج والبطاقات الرقمية.">
+  <title>Djital arena 07 by Fadi | Gaming Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>⚡ DJITAL ARENA 07 BY FADI — Gaming • Mobile • Consoles • Digital</span>
+      <a href="tel:+213665565242">📞 0665565242</a>
+    </div>
+  </div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="#home"><span class="brand-main">DJITAL ARENA 07</span><small>BY FADI</small></a>
+      <nav class="navlinks" aria-label="التنقل الرئيسي">
+        <a href="#products">المنتجات</a>
+        <a href="#categories">الأقسام</a>
+        <a href="#about">عن المتجر</a>
+        <a href="#contact">اتصل بنا</a>
+      </nav>
+      <div class="actions">
+        <button class="icon-btn" id="themeBtn" title="الوضع الليلي">☾</button>
+        <button class="icon-btn" id="searchBtn" title="بحث">⌕</button>
+        <button class="cart-btn" id="cartBtn">🛒 <span>السلة</span> <b id="cartCount">0</b></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="kicker">🎮 PREMIUM GAMING STORE</span>
+          <h1>كل ما تحتاجه<br><span class="grad">لتجربة Gaming أقوى.</span></h1>
+          <p>Djital arena 07 by Fadi متجر عصري للهواتف، أجهزة الألعاب، الإكسسوارات والبطاقات الرقمية، مع تجربة شراء سريعة وسلة طلب مرتبطة بواتساب.</p>
+          <div class="hero-actions">
+            <a class="primary" href="#products">تصفح المنتجات</a>
+            <a class="secondary" target="_blank" rel="noopener" href="https://wa.me/213665565242?text=السلام%20عليكم%20Djital%20arena%2007%20by%20Fadi%20أريد%20الاستفسار%20عن%20منتج">💬 واتساب</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><strong id="productCount">60+</strong><span>منتج وخدمة</span></div>
+            <div class="stat"><strong>8</strong><span>أقسام رئيسية</span></div>
+            <div class="stat"><strong>24/7</strong><span>استقبال الطلبات</span></div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img id="catalogImage" src="" alt="Djital arena 07 by Fadi catalog">
+          <div class="hero-overlay">DJITAL ARENA 07 <span>BY FADI • GAME DIFFERENT</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow">SHOP BY CATEGORY</span><h2>استكشف الأقسام</h2></div>
+          <p>اختر القسم للوصول إلى المنتجات بسرعة.</p>
+        </div>
+        <div class="categories" id="categoryGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow">OUR CATALOG</span><h2>منتجات Djital arena 07 by Fadi</h2></div>
+          <p id="resultText">جميع المنتجات</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="search">
+            <span>⌕</span>
+            <input id="searchInput" type="search" placeholder="ابحث عن هاتف، PS4، ماوس، سماعة..." autocomplete="off">
+            <button id="clearSearch" class="clear-search" aria-label="مسح البحث">×</button>
+          </div>
+          <select id="sortSelect">
+            <option value="default">الترتيب الافتراضي</option>
+            <option value="az">الاسم: أ → ي</option>
+            <option value="za">الاسم: ي → أ</option>
+          </select>
+        </div>
+
+        <div class="grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="panel">
+          <span class="eyebrow">ABOUT US</span>
+          <h2>مصمم لعشاق الجيمنج.</h2>
+          <p>واجهة متجر Static حديثة، خفيفة وسريعة، مناسبة للنشر على GitHub Pages بدون قاعدة بيانات أو خادم خاص.</p>
+          <div class="feature-list">
+            <div>✓ بحث فوري وفلاتر للأقسام</div>
+            <div>✓ سلة مشتريات محفوظة في المتصفح</div>
+            <div>✓ طلب مباشر عبر WhatsApp</div>
+            <div>✓ تصميم متجاوب للكمبيوتر والهاتف</div>
+          </div>
+        </div>
+        <div class="panel panel-glow">
+          <span class="eyebrow">WHY DJITAL ARENA 07?</span>
+          <h3>واجهة احترافية قابلة للتطوير</h3>
+          <p>يمكنك لاحقاً إضافة الأسعار، الكميات، صفحات المنتجات، صور حقيقية، نظام كوبونات، أو ربط الموقع بواجهة API دون تغيير الهيكل الأساسي.</p>
+          <a class="secondary inline" href="#contact">تواصل معنا</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <span class="eyebrow">CONTACT</span>
+          <h2>جاهز للطلب؟</h2>
+          <p>أضف المنتجات إلى السلة ثم أرسل الطلب مباشرة عبر واتساب.</p>
+          <div class="phone">0665565242</div>
+          <a class="primary inline" target="_blank" rel="noopener" href="https://wa.me/213665565242?text=السلام%20عليكم%20Djital%20arena%2007%20by%20Fadi">فتح واتساب</a>
+        </div>
+        <div class="panel">
+          <h3>ملاحظة</h3>
+          <p>الأسعار تظهر حالياً «السعر عند الطلب» لأن القائمة الأصلية لم تتضمن أسعاراً. تعديلها يتم بسهولة من ملف <code>script.js</code>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><b> DIGITAL <span>ARENA</span></b><p>Gaming store for the next level.</p></div>
+      <div>© 2026 Djital arena 07 by Fadi — جميع الحقوق محفوظة.</div>
+    </div>
+  </footer>
+
+  <div class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-bg" id="drawerBg"></div>
+    <aside class="drawer-panel">
+      <div class="drawer-head"><b>🛒 سلة المشتريات</b><button class="icon-btn" id="closeCart">✕</button></div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-foot">
+        <div class="total"><span>عدد المنتجات</span><strong id="cartTotal">0</strong></div>
+        <button class="primary full" id="orderBtn">إرسال الطلب عبر واتساب</button>
+        <button class="secondary full" id="emptyBtn">تفريغ السلة</button>
+      </div>
+    </aside>
+  </div>
+
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal-box" id="modalBox"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
